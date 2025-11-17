@@ -102,5 +102,5 @@
 
 ##  Autorja
 - Studente: Elsa Krasniqi , N = 89
-    FIEK – Inxhinieri Kompjuterike dhe Softuerike  
-    Lënda: Testim Softueri
+ - FIEK – Inxhinieri Kompjuterike dhe Softuerike  
+ - Lënda: Testim Softueri
