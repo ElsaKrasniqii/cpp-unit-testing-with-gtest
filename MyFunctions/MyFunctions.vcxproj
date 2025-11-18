@@ -124,7 +124,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MyFunctions.cpp" />
     <ClCompile Include="T01_IsValidEmail.cpp" />
     <ClCompile Include="T02_CalculateShipping.cpp" />
     <ClCompile Include="T03_ContainsBadWords.cpp" />
