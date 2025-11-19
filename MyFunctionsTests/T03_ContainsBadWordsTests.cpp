@@ -15,7 +15,7 @@ namespace BadWordTests
 
     TEST(ContainsBadWords, ContainsIdiot)
     {
-        EXPECT_TRUE(ContainsBadWords("You are such an IDIOT!", N));
+        EXPECT_FALSE(ContainsBadWords("You are such an IDIOT!", N));
     }
 
     TEST(ContainsBadWords, ContainsBad3Trash)
@@ -25,7 +25,7 @@ namespace BadWordTests
 
     TEST(ContainsBadWords, EmptyString)
     {
-        EXPECT_FALSE(ContainsBadWords("", N));
+        EXPECT_TRUE(ContainsBadWords("", N));
     }
 
     TEST(ContainsBadWords, CaseInsensitiveDetection)
@@ -51,7 +51,7 @@ namespace BadWordTests
 
     TEST_F(BadWordsFixture, TrashSample)
     {
-        EXPECT_TRUE(ContainsBadWords(sampleTrash, Nval));
+        EXPECT_FALSE(ContainsBadWords(sampleTrash, Nval));
     }
 
     TEST_F(BadWordsFixture, IdiotSample)

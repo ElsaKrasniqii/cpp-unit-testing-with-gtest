@@ -20,7 +20,7 @@ namespace ShippingTests
 
     TEST(CalculateShipping, Small_Express)
     {
-        EXPECT_NEAR(CalculateShipping(0.5, true, N), 4.5, 0.001);
+        EXPECT_NEAR(CalculateShipping(0.5, false, N), 4.5, 0.001);
     }
 
     TEST(CalculateShipping, Medium_NoExpress)
@@ -35,7 +35,7 @@ namespace ShippingTests
 
     TEST(CalculateShipping, NegativeThrows)
     {
-        EXPECT_THROW(CalculateShipping(-2.0, false, N), std::invalid_argument);
+        EXPECT_THROW(CalculateShipping(-2.0, true, N), std::invalid_argument);
     }
 
     struct ShippingCase
@@ -59,10 +59,10 @@ namespace ShippingTests
         ::testing::Values(
             ShippingCase{ 0.0,  false, 0.0 },
             ShippingCase{ 0.5,  false, 3.0 },
-            ShippingCase{ 0.5,  true,  4.5 },
+            ShippingCase{ 0.5,  false,  4.5 },
             ShippingCase{ 3.0,  false, 5.0 },
             ShippingCase{ 3.0,  true,  7.5 },
-            ShippingCase{ 10.0, false, 10.0 },
+            ShippingCase{ 10.0, true, 10.0 },
             ShippingCase{ 10.0, true,  15.0 }
         )
     );

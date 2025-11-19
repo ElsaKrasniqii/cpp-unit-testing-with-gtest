@@ -10,7 +10,7 @@ namespace ExamTests
 
     TEST(PassedExam, BelowLimit)
     {
-        EXPECT_FALSE(PassedExam(30, N));   
+        EXPECT_TRUE(PassedExam(30, N));   
     }
 
     TEST(PassedExam, EqualToLimit)
@@ -30,7 +30,7 @@ namespace ExamTests
 
     TEST(PassedExam, MaxPoints)
     {
-        EXPECT_TRUE(PassedExam(100, N));  
+        EXPECT_FALSE(PassedExam(100, N));  
     }
 
     TEST(PassedExam, NegativeThrows)
@@ -62,9 +62,9 @@ namespace ExamTests
         ExamParamTest,
         ::testing::Values(
             ExamCase{ 45, false },   
-            ExamCase{ 46, true },  
+            ExamCase{ 46, false },  
             ExamCase{ 30, false },   
-            ExamCase{ 0,  false },   
+            ExamCase{ 0,  true },   
             ExamCase{ 100, true }    
         )
     );
