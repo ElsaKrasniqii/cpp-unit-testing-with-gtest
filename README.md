@@ -1,5 +1,6 @@
 #  C++ Software Testing – GoogleTest (T1–T5)
- - Ky projekt përmban detyrat T1–T5 të lëndës **Testim Softuerik**, të implementuara në C++ dhe të testuara duke përdorur **GoogleTest (GTest)**. Projekti demonstron testim njësi (unit testing), teste të parametrizuara, teste me fixture dhe mbulim të rasteve pozitive, negative dhe kufitare.
+ - Ky projekt përmban detyrat T1–T5 të lëndës **Testim Softuerik**, të implementuara në C++ dhe të testuara duke përdorur **GoogleTest (GTest)**.
+ - Projekti demonstron testim njësi (unit testing), teste të parametrizuara, teste me fixture dhe mbulim të rasteve pozitive, negative dhe kufitare.
 
 ##  Përmbajtja
  - Projekti është i organizuar në dy direktoriume kryesore:
