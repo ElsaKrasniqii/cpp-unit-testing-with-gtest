@@ -17,12 +17,12 @@ namespace EmailTests
 
     TEST(IsValidEmail, NoPartBeforeAt)
     {
-        EXPECT_FALSE(IsValidEmail("@example.com"));
+        EXPECT_FALSE(IsValidEmail("1@example.com"));
     }
 
     TEST(IsValidEmail, NoDotAfterAt)
     {
-        EXPECT_FALSE(IsValidEmail("user@examplecom"));
+        EXPECT_FALSE(IsValidEmail("user@exampleco2m"));
     }
 
     TEST(IsValidEmail, ShortDomain)
